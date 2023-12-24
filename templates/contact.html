@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}    Contact {% endblock %}
+
+{% block content %}
+    <h1>Contact Me </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-actions">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+    <footer class="blog-footer" id="contact">
+
+        <h2>Thank you for going through my profile.</h2>
+        <br>
+
+        <h5>I would like to know about your thoughts and opinion on me. It'll be for better understanding and self
+            improvement.
+            <br>Please Reach out to me through the following media
+        </h5>
+        <center>
+            <div class="footer">
+                <table class="footer-table">
+                    <tr>
+                        <td>
+                            <h4><i class="fa fa-envelope" aria-hidden="true"></i>Email: </h3>
+                        </td>
+                        <td><a href="mailto:reachto.smitha@yahoo.com">reachto.smitha@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><i class="fa fa-phone" aria-hidden="true"></i>Phone: </h3>
+                        </td>
+                        <td><a href="tel:+919742330941">+919742330941</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn: </h4>
+                        </td>
+                        <td><a href="http://www.linkedin/smitha-4r/">http://www.linkedin/smitha-4r/</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><i class="fa fa-git-square" aria-hidden="true"></i> GitHub: </h4>
+                        </td>
+                        <td><a href="http://www.github.io/smitha-4/">http://www.github.io/smitha-4/</a></td>
+                    </tr>
+                
+                </table>
+
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.784671609778!2d75.84888132055231!3d12.596438353106445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba504da27464a81%3A0x3f8ccb746914194!2sSomwarpet%2C%20Karnataka%20571236!5e0!3m2!1sen!2sin!4v1702453891337!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </center>
+       
+{% endblock %}
